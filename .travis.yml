@@ -4,6 +4,6 @@ services:
 
 before_install:
   - docker build -t shiraova/docker-react -f Dockerfile.dev .
-
-script:
+#script
+script: 
   - docker run -e CI=true shiraova/docker-react npm run test
